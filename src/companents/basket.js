@@ -32,13 +32,15 @@ const Basket = () => {
                                                 <div className="flex flex-col w-[50%] text-right pr-10 ">
                                                     <p className="text-md pt-20 pr-16 font-medium ">${el.price * el.quantity}</p>
                                                     <span className="text-md pt-5  font-medium">
-                                                    <button
-                                                        className="bg-blue-900 hover:bg-black text-white font-bold py-2 px-4 rounded "
-                                                        onClick={() => dispatch(addToBasket(el))}>+</button>
-                                                    Количество : {el.quantity}
+                                                 <div className="mt-2">
                                                         <button
-                                                            className="bg-blue-900 hover:bg-black  text-white font-bold py-2 px-4 rounded"
-                                                            onClick={() => dispatch(DecreaseToBasket(idx))}>-</button>
+                                                            className="bg-blue-900 hover:bg-black text-white font-bold py-2 px-4 rounded "
+                                                            onClick={() => dispatch(addToBasket(el))}>+</button>
+                                                    Количество : {el.quantity}
+                                                     <button
+                                                         className="bg-blue-900 hover:bg-black  text-white font-bold py-2 px-4 rounded"
+                                                         onClick={() => dispatch(DecreaseToBasket(idx))}>-</button>
+                                                 </div>
                                                     </span>
 
                                                    <button

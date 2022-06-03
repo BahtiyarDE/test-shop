@@ -86,13 +86,13 @@ const ShopDetails = () => {
                     <div className="flex flex-col w-80">
                         {
                             basketItems ? <button
-                                className="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded my-4">
+                                className="bg-zinc-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded my-4">
                                 <FontAwesomeIcon icon={faCheck}/>Добавлено</button> : <button
                                 className="bg-zinc-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded my-4 "
                                 onClick={() => dispatch(addToBasket(prodDetail))}
                             ><FontAwesomeIcon icon={faBagShopping}/> Добавить в корзину</button>
                         }
-                        <button className="bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded my-4"
+                        <button className="bg-zinc-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded my-4"
                         >Купить сейчас</button>
                     </div>
                 </div>
