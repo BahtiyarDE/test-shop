@@ -31,9 +31,9 @@ const BooksCard = ({el}) => {
              key={el.id}>
             <div
                 className="sm:px-2 py-2  md:px-2 py-3 lg:px-3 py-4 xl:px-4 py-5 text-gray-100 bg-gray-900 px-4 py-4
-                 rounded-md body-font shadow-black bg-black-500 shadow-lg shadow-black-500/100 hover:scale-105 mx-3">
+                 rounded-md body-font shadow-black bg-black-500 shadow-lg shadow-black-500/100 hover:scale-105 mx-3 ">
 
-                <div className="w-full">
+                <div className="w-full ">
                     <Link to={`/shop-details/${el.id}`}>
                         <img src={el.image} alt="image"
                              className="w-full h-96 object-cover rounded-md"/>
